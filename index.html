@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LifeChrono-Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="LIFE CHRONO.png" type="image/x-icon" />
+  </head>
+    <div class="container">
+      <h1>Age Calculator</h1>
+      <form id="ageForm">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required />
+        <button type="button" id="calculateBtn" class="button calculateBtn" onclick="calculateAge()">
+          Calculate Age
+        </button>
+      </form>
+      <div id="dateDisplay" class="date-display">
+        <div id="dayDisplay" class="date-box"></div>
+        <div id="monthDisplay" class="date-box"></div>
+        <div id="yearDisplay" class="date-box"></div>
+      </div>
+      <p id="result"></p>
+      <p id="zodiacSign"></p>
+      <p id="nextBirthdayCountdown"></p>
+      <audio id="birthdaySong">
+        <source src="happy_birthday.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <button id="stopButton" onclick="stopMusic()" style="display: none">
+        Stop Music
+      </button>
+    </div>
+
+    <!-- buy me a coffee QR code -->
+    <div class="buy-me-a-coffee" id="buyMeACoffee" style="display: none">
+      <h3>Like LifeChrono? Support me with a coffee! ☕</h3>
+      <img
+        src="buy me a coffee QR code.png"
+        alt="Buy Me a Coffee QR Code"
+      />
+      <p>Scan the QR code:</p>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <p>&copy; 2024 Pruthviraj. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
