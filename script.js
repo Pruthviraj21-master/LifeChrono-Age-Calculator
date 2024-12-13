@@ -104,10 +104,9 @@ function calculateNextBirthday(dobDate) {
 
 // Ensure DOM is fully loaded before attaching the event listener
 document.addEventListener('DOMContentLoaded', function () {
-  const calculateBtn = document.getElementById('calculateBtn');
-  if (calculateBtn) {
-    calculateBtn.addEventListener('click', calculateAge);
-  } else {
-    console.error('Element with ID "calculateBtn" not found.');
-  }
+  document.getElementById('calculateBtn').addEventListener('click', calculateAge);
 });
+
+
+
+
